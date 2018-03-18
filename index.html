@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BonDoQ | A Software Engineer</title>
+
+    <link rel="icon" href="favicon.ico" type="image/png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript">
+        const themes = [
+            "css/themes/indigo-white.css",
+            "css/themes/green-white.css",
+            "css/themes/red-white.css",
+            "css/themes/grey-white.css",
+            "css/themes/white-indigo.css",
+            "css/themes/white-blue.css",
+            "css/themes/white-grey.css",
+            "css/themes/white-red.css",
+            "css/themes/yellow-black.css",
+        ];
+        const min = 0, max = 9;
+        const randomThemeIndex = Math.floor(Math.random() * (max - min) + min);
+
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = themes[randomThemeIndex];
+        document.head.appendChild(link);
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="intro">Hello, I'm Ahmed!</div>
+        <div class="tagline">Frontend Engineer | Mac | FC Barcelona </div>
+        <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+        <div class="icons-social">
+            <a target="_blank" href="https://github.com/bondoq">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/_bondoq">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/bondoq">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://medium.com/@bondoq">
+                <i class="fab fa-medium"></i>
+            </a>
+
+        </div>
+    </main>
+</body>
+
+</html>
